@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="armybuilder.main.Controller">
+   <children>
+      <Button fx:id="addBtn" layoutX="301.0" layoutY="232.0" mnemonicParsing="false" onAction="#addUnit" text="Add" />
+      <Button fx:id="rmvBtn" layoutX="449.0" layoutY="232.0" mnemonicParsing="false" onAction="#removeUnit" text="Remove" />
+      <ListView fx:id="listUnits" layoutX="12.0" layoutY="52.0" prefHeight="164.0" prefWidth="780.0" />
+      <ListView fx:id="userUnits" layoutX="9.0" layoutY="272.0" prefHeight="164.0" prefWidth="780.0" />
+      <Label fx:id="total" layoutX="646.0" layoutY="458.0" text="/ 8" />
+      <Label layoutX="157.0" layoutY="458.0" text="Command:" />
+      <Label layoutX="279.0" layoutY="458.0" text="Line:" />
+      <Label layoutX="359.0" layoutY="458.0" text="Monsters:" />
+      <Label layoutX="555.0" layoutY="458.0" text="Total Units:" />
+      <TextField layoutX="219.0" layoutY="454.0" prefHeight="25.0" prefWidth="22.0" />
+      <TextField layoutX="312.0" layoutY="454.0" prefHeight="25.0" prefWidth="25.0" />
+      <TextField layoutX="424.0" layoutY="454.0" prefHeight="25.0" prefWidth="27.0" />
+      <MenuBar layoutX="1.0" layoutY="2.0" prefHeight="25.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
